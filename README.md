@@ -12,4 +12,6 @@ This repository was initialized with:
 git init
 git branch -m main
 git submodule add https://github.com/argoproj/argo-rollouts.git
+
+# Finally, manually add '  branch = main' to .gitmodules, as recommended by https://konflux-ci.dev/docs/how-tos/workflows/git-submodules/
 ```

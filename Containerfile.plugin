@@ -47,9 +47,12 @@ RUN make plugin-linux plugin-darwin plugin-windows
 # Package the binaries into the image
 ####################################################################################################
 
-FROM --platform=$BUILDPLATFORM golang:1.22
+FROM scratch
 
-# FROM scratch
+# For debugging purposes, if you want to run commands inside the container, for example, to see the binaries, you can uncomment this line:
+# FROM --platform=$BUILDPLATFORM golang:1.22
+# Then run 'docker run -it --rm (container image) bash'
+
 
 WORKDIR /
 
