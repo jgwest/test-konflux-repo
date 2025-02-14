@@ -1,7 +1,7 @@
 ####################################################################################################
 # UI build stage
 ####################################################################################################
-FROM docker.io/library/node:18 AS argo-rollouts-ui
+FROM docker.io/library/node:22 AS argo-rollouts-ui
 
 # WORKDIR /argo-rollouts/src
 
